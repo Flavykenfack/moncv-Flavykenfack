@@ -5,10 +5,29 @@
   padding: 0.2em 0;
 }
 
+.header, .cWhite{
+  background-color: white;
+}
+
+.btransparent{
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.borderTop{
+  border-bottom: 10px solid;
+  background-color: green;
+}
+
+.ligne h3{
+  border: 3px solid;
+  color:green;
+  }
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: pink;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -45,7 +64,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
- /* text-align: center;*/
+  text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -60,9 +79,10 @@ body {
   padding: 14px 24px;
 }
 
+
 .top{
-  font-family: "Times New Roman", Georgia, Serif;
   font-weight: bold;
+  color: grey;
 }
 
 /* Supporting marketing content */

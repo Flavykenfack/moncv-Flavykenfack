@@ -15,8 +15,8 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- build:css styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
+        <!-- build:css styles/main.css href="styles/main.css"-->
+        <link rel="stylesheet" href="bower_components/bootswatch/Superhero/bootstrap.css">
         <!-- endbuild -->
 
         <!-- build:js scripts/vendor/modernizr.js -->
@@ -30,45 +30,55 @@
 
             <div class="container">
               <div class="header">
-                <ul class="nav nav-pills pull-right">
+                <ul class="nav nav-pills pull-left">
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#Experiences">Expériences</a></li>
                   <li><a href="#Etudes">Etudes</a></li>
                   <li><a href="#Contact">Contact</a></li>
                 </ul>
-                <h3 class="text-muted">Kenfack Flavienne</h3>
+              
               </div>
+              
 
-              <!--<div class="jumbotron">
-               <h1>'Allo, 'Allo!</h1>
-              <p class="lead">Always a pleasure scaffolding your apps.</p>
-              <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p> 
-            </div> -->
-
-      <div class="row">
-         <div class="col-xs-6 col-sm-6" >
+              <div class="jumbotron">
+               <div class="row" class="btransparent">
+                <div class="col-xs-12 col-sm-12" >
+                    <h2> Curriculum Vitae</br>
+                    Kenfack Flavienne</h2>
+                </div>
+              </div>
+            </div>
+      
+        <div class="row" >
+         <div class="col-xs-6 col-sm-4">
             <img src="FlavyPhoto.jpg" class="img-responsive" alt="Photo de Flavienne">
           </div>
-          <div class="col-xs-6 col-sm-6">
-            <h3> Informations personnelles</h3>
+          <div class="col-xs-6 col-sm-8">  
             <p>Date de naissance : 11.09.1988</p>
             <p>Situation familiale: Célibataire</p>
             <p>Nationalité: Suisse</p>
-         </div>    
-      </div>  
-
+            <ul> Langues
+              <li>Langue maternelle</li>
+              <li>B1 (BEC Preliminary)</li>
+              <li>Connaissances scolaires</li>           
+            </ul>
+          </div>
+        </div>   
+        
+        
        <div class="row">
         <div class="col-xs-6 col-sm-12">
           <h3 id="Experiences"> Experiences professionnelles</h3>
-          <p class="top"> Informaticienne de gestion ES en entreprise (Stage)</p>
+
+          <p > Informaticienne de gestion ES en entreprise (Stage)</p>
          <p>
           11.2014 - : LMB (Bulle)
           <ul>
             <li>Stagiaire dans le département informatique</li>
           </ul>
            </p>
-          <p class="top">Informaticienne de gestion ES en entreprise (Stage) </p></br>
-          <a>08.2012 – 11.2012 : Gerber Systems & Networks (Ecublens)</a>
+          <p >Informaticienne de gestion ES en entreprise (Stage) </p>
+          <p>08.2012 – 11.2012 : Gerber Systems & Networks (Ecublens)</p>
           <ul>
             <li>Mise en place d’outils d’analyse du trafic web et amélioration du référencement.</li>
             <li>Mise en oeuvre de modèles de documents bureautiques.</li>
@@ -77,13 +87,13 @@
           </ul>
 
 
-          <p>Serveuse</p>
+          <p >Serveuse</p>
           <p>01.2011 – 10.2014 : Tea-Room/Bar Le Chantilly (Fribourg)</p>
           <p>09.2010 – 04.2013 : Restaurant Sport Café (Granges-Paccot)</p>
           <p>05.2008 – 07.2010 : Restaurant Le Sarazin (Belfaux)</p>
 
           <h3 id="Etudes">Etudes </h3>
-          <p>Informaticienne de gestion ES</p>
+          <p >Informaticienne de gestion ES</p>
           <p>2011 –2014 : Ecole supérieure vaudoise d’Informatique de Gestion (Lausanne)</p>
           <ul>
             <li>Gestion d'entreprise (comptabilité, connaissances du droit des obligations, droit
@@ -94,7 +104,7 @@
                 Java)</li>
               </ul>
 
-              <p>Stage Linguistiques</p>
+              <p > Stage Linguistiques</p>
               <p>07.2011 – 08.2011 : Ecole de langue EF (Manchester/UK)</p>
               <ul>
                 <li>Attestation de scolarité</li>
@@ -104,43 +114,21 @@
           </div>
 
 
-         <!--  <div class="row">
-            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
-          </div>
-
-          <div class="row marketing">
-            <div class="col-lg-6">
-              <h4>HTML5 Boilerplate</h4>
-              <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-              <h4>Bootstrap</h4>
-              <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-              <h4>Modernizr</h4>
-              <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-            </div>
-          </div> -->
-
-
-
           <div class="footer">
             <h3 id="Contact">Contact</h3>
             <div class="row">
               <div class="col-xs-6 col-sm-3">
                 <h5>Adresse</h5>
-                <p>Impasse des Essertines 6
-              1782 Belfaux </p>
+                <p>Route des escagrots 2
+              1112 Aurore </p>
               </div>
               <div class="col-xs-6 col-sm-3">
                 <h5>Numéro de téléphone</h5>
-              <p>078 770 10 76</p>
+              <p>076 707 87 76</p>
               </div>
               <div class="col-xs-6 col-sm-3">
               <h5>E-Mail</h5>
-             <p> flaviennekenfack@yahoo.fr</p>
+             <p> cvdeflavienne@gmail.com</p>
             </div>
             </div>
 
