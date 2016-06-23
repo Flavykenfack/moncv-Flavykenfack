@@ -8,6 +8,17 @@ const wiredep = require('wiredep').stream;
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+var deploy = require('gulp-deploy-git');
+gulp.task('deploy', function() {
+  return gulp.src('**/*',  { read: false, cwd: 'dist'  })
+    .pipe(deploy({
+      repository: 'git@github.com:heg-web/moncv-Flavykenfack.git',
+      remoteBranch:   'gh-pages'
+    }))
+});
+
+
+
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.css')
     .pipe($.sourcemaps.init())
