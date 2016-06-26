@@ -1,49 +1,60 @@
 $(document).ready(function(){
 'use strict';
+
 $('a').smoothScroll();
 
-var data = {
-    labels: [
-        "Red",
-        "Blue",
-        "Yellow"
-    ],
-    datasets: [
-        {
-            data: [30, 50, 100],
-            backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ],
-            hoverBackgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ]
-        }]
-};
+// var data = {
+//     labels: [],
+//     datasets: [
+//         {
+//             data: [30,70],
+//             backgroundColor: [
+//                 "#FF6384"
+//             ],
+//             hoverBackgroundColor: [
+//                 "#FF6384"
+//             ]
+           
+//         }]
+// };
 
+// var ctx = $("#myCanvas").get(0).getContext("2d");
+// var myCanvas = new Chart(ctx, {
+// 	type: 'doughnut',
+// 	data: data,
+//     options: {
+//         responsive: true
+//     }
+// });
 
-//var ctx = document.getElementById("myCanvas").getContext("2d");
-var ctx = $("#myCanvas").get(0).getContext("2d");
-var myCanvas = new Chart(ctx, {
-	type: 'doughnut',
-	data: data,
-    options: {
-        responsive: true
-    }
-});
+var listObj = $('.progress-bar');
 
-if( $('.progress-bar').attr('role') === "progressbar") { 
-    console.log("yes");
-}else{
-    console.log('no');
-};
+    listObj.each(function(){
+        var dataNow = $(this).attr('aria-valuenow');
+        var data1 = $(this).attr('aria-valuemax')-dataNow;
+        var newCanvas = $('<canvas> </canvas>');
+        $(this).parent().replaceWith(newCanvas);
 
-var listObj1  = $('.progress-bar'); 
+        var data = {
+        labels: [],
+        datasets: [
+            {
+                data: [dataNow, data1],
+                backgroundColor: [ "#FF6384" ],
+                hoverBackgroundColor: [ "#FF6384"]
+               
+            }]
+        };
 
-var d1 = $('.progress-bar').attr('aria-valuenow');
+        var myCanvas = new Chart(newCanvas, {
+        type: 'doughnut',
+        data: data,
+        options: {
+         responsive: true
+            }
+        });
+
+    });
 
 
 });

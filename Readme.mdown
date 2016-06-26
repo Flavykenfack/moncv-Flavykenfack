@@ -1,25 +1,25 @@
 CV de Flavienne Kenfack
 
 #Installation de Nodejs
-Pour mettre en place notre cv web, j'ai tout d'abord installer Nodejs sans les parametre SAAS
+<p>Pour mettre en place notre cv web, j'ai tout d'abord installer Nodejs sans les parametre SAAS</p>
 <pre><code> </code></pre>
 
-
 ##Paramétrage
-<p> Nodejs installé il faut télécharger Github qui va nous permettre tout d'abord d'avoir un meilleur suivi de notre projet (version, publication), Grâce  Git Shell on peut installer des d
-
-</p>
+<p> Nodejs installé il faut télécharger Github qui va nous permettre tout d'abord d'avoir un meilleur suivi de notre projet (version, publication), Grâce à l'outil Git Shell on peut installer yo webapp.</p>
+<pre><code> </code></pre>
 
 ##Fonction avec SmothScroll
 <p>Installation du plugin</p> 
 <pre><code> </code></pre>
 <pre><code>bower install jquery-smooth-scroll --save </code></pre>
-Ce plugin va permettre une meilleure affichage de la page quand on veut se rencdre sur un élément de la page.
+<p>Ce plugin va permettre un meilleur affichage de la page quand on veut se rendre sur un élément de la page.</p>
 <pre><code> $(document).ready(function(){'use strict';$('a').smoothScroll(); }); </code></pre>
 
 
 ##Création fonction en JQuery
-il n'a pa été facile pour moi de créer une fonction en JQuery
+<p>Il n'a pa été facile pour moi de créer une fonction en JQuery. Cette fonction doit modifier une progress bar en canvas. Ce qui est important c'est d'aller par étape.</p>
+-
+
 <pre><code> </code></pre>
 
 
