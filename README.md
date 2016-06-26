@@ -120,7 +120,8 @@ git push
 >Il est important de toujours faire attention à la syntaxe et à l'ordre des évènements.
 >Lors de ce projet j'ai remarquer avoir fait beaucoup d'erreur qui m'ont ralenti sur mon travail.
 >Il faut toujours travailler sur la racine du projet, surtout lorsque peut déployer le cv vers Github.
->Pour utiliser la commande deploy depuis Git Shell on va installer gulp-deploy avec npm
+>Pour utiliser la commande deploy depuis Git Shell on va installer gulp-deploy avec npm.
+
 ```sh
 npm install --save-dev gulp-deploy-git
 ```
@@ -135,7 +136,7 @@ gulp.task('deploy', function() {
     }))
 });
 ```
->On peut consulter notre site en ligne : [Lien vers mon cv web]:https://heg-web.github.io/moncv-Flavykenfack/
+>On peut consulter notre site en ligne : [Lien vers mon cv web](https://heg-web.github.io/moncv-Flavykenfack/)
 
 ## Outils installés
 - Nodejs
