@@ -99,7 +99,7 @@ Des que c'est fini on peut tester si le repertoire dist est accésible
 ```sh
 gulp serve:dist
 ```sh
-Si Premiere fois alors executer ce code qui va permettre de deployer vers gh-pages
+Si Premiere fois alors executer ce code qui va permettre de lier notre dossier vers un répertoire existant dans github
 ```sh
 git init
 git checkout -b gh-pages
