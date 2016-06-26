@@ -9,10 +9,32 @@
 ##Paramétrage de Nodejs
 <p> Nodejs installé il faut télécharger Github qui va nous permettre tout d'abord d'avoir un meilleur suivi de notre projet (version, publication),
 	Grâce à l'outil Git Shell on peut installer certains outils comme yeoman (Générateur de site web utilisant Grunt et Bower),
-	bower(Gestionnaire de paquet web, il va nous permettre d'installer des package tel que bootswatch, jquery), Gulp(outil d'automatisation des tâches. va permettre de démarrer le server <pre><code>gulp serve</code></pre>)</p>
+	bower(Gestionnaire de paquet web, il va nous permettre d'installer des package tel que bootswatch, jquery), Grunt (Outil d'automatisation des tâches mais nous allons utiliser Gulp), Gulp(outil d'automatisation des tâches. va permettre de démarrer le server <pre><code>gulp serve</code></pre>)</p>
 
-##Installer Github
-<pre><code> </code></pre>
+###Installer Github
+<p>Github est un service d'hébergement web et de gestion de dévellopement de logicils. 
+	Se rendre sur le site pour télécharger "github for desktop" ainsi on pourra utiliser l'outil Git Shell. </p>
+
+###Installer yeoman, bower et gulp
+<p>Pour installer tous ces outils, on va aller sur Git Shell et depuis npm. 
+	npm(installé par défaut lors de l'installation de Nodejs, c'est un gestionnaire de paquet de Nodejs)
+	Des qu'on est sur GitShell on arrive sur la racine github et de la on peut utiliser la commande suivante: 
+	<pre><code>$ npm install -g yo bower gulp-cli</code></pre><pre><code>$ npm install -g generator-webapp</code></pre></p>
+
+###Créer un nouveau projet
+<p>On peut maintenant créer un nouveau projet pour cela on va utiliser la commande suivante:
+	<pre><code>$ mkdir Kenfack_Flavienne</code></pre> 
+	Pour ce rendre vers le projet que nous venons de créer <pre><code>$ cd Kenfack_Flavienne</code></pre>
+	Des que on est sur le dossier lancer la commande de mettre en place une nouvelle application <pre><code>$ yo webapp</code></pre>
+	On va devoir choisir quel framework on va utiliser. On va choisir Bootstrap (est un framework qui va faciliter la creation et la customisation d'un site web ou application web) et Modernizr.
+	Pour lancer le serveur on va lancer cette commande : <pre><code>gulp serve</code></pre></p>
+
+###Installer les packages
+####Bootswatch
+<p>Bootswatch est un package qui contient des themes gratuit pour utiliser avec Bootstrap.
+	pour l'installer on va utiliser cette commande: <pre><code>bower install bootswatch --save</code></pre>
+	On peut voir les themes sur le site bootswatch.
+	J'ai pu essayer différents thèmes en modifier le lien suivant: <pre><code><link rel="stylesheet" href="bower_components/bootswatch/???/bootstrap.css" /></code></pre></p>
 
 #JQuery
 ##Fonction avec SmothScroll
