@@ -1,15 +1,29 @@
 CV de Flavienne Kenfack
 
-#Installation de 
-
 #Installation de Nodejs
+Pour mettre en place notre cv web, j'ai tout d'abord installer Nodejs sans les parametre SAAS
+<pre><code> </code></pre>
 
-##Paramétrage de Nodejs
 
-#
+##Paramétrage
+<p> Nodejs installé il faut télécharger Github qui va nous permettre tout d'abord d'avoir un meilleur suivi de notre projet (version, publication), Grâce  Git Shell on peut installer des d
 
-#
+</p>
 
-#
+##Fonction avec SmothScroll
+<p>Installation du plugin</p> 
+<pre><code> </code></pre>
+<pre><code>bower install jquery-smooth-scroll --save </code></pre>
+Ce plugin va permettre une meilleure affichage de la page quand on veut se rencdre sur un élément de la page.
+<pre><code> $(document).ready(function(){'use strict';$('a').smoothScroll(); }); </code></pre>
 
-#
+
+##Création fonction en JQuery
+il n'a pa été facile pour moi de créer une fonction en JQuery
+<pre><code> </code></pre>
+
+
+#Publier CV vers Github
+Dès qu'on fini de modifier le cv 
+tout est en ordre alors on peut le publier vers Github qui sera accessible à tout le monde 
+<pre><code> </code></pre>

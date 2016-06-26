@@ -1,4 +1,6 @@
 $(document).ready(function(){
+'use strict';
+$('a').smoothScroll();
 
 var data = {
     labels: [
@@ -8,8 +10,17 @@ var data = {
     ],
     datasets: [
         {
-            data: [30, 50, 10],
-           
+            data: [30, 50, 100],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
         }]
 };
 
@@ -24,9 +35,15 @@ var myCanvas = new Chart(ctx, {
     }
 });
 
-$function myCanvasTransform (argument) {
-	// body...
-}
+if( $('.progress-bar').attr('role') === "progressbar") { 
+    console.log("yes");
+}else{
+    console.log('no');
+};
+
+var listObj1  = $('.progress-bar'); 
+
+var d1 = $('.progress-bar').attr('aria-valuenow');
 
 
 });
