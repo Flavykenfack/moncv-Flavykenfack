@@ -112,7 +112,7 @@ git push --set-upstream origin gh-pages
 Si ce n'est pas la premiere fois alors continuer avec ce code
 ```sh 
 git add . --all
-git commit -m
+git commit -m "Ajouter un commaentaire sinon on ne pourra pas faire de push"
 git push
 ``` 
 
@@ -136,7 +136,7 @@ gulp.task('deploy', function() {
     }))
 });
 ```
->On peut consulter notre site en ligne : [Lien vers mon cv web](https://heg-web.github.io/moncv-Flavykenfack/)
+>On peut consulter mon site en ligne : [Lien vers mon cv web](https://heg-web.github.io/moncv-Flavykenfack/)
 
 ## Outils installés
 - Nodejs
